@@ -1,11 +1,138 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Wiseplay</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=10, user-scalable=yes">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="เว็บไซต์ DS และทีวีออนไลน์ รวมลิงก์ดูทีวี กีฬา และหนังออนไลน์ในที่เดียว">
+    <meta name="keywords" content="DS, ทีวีออนไลน์, ดูหนัง, กีฬา, YouTube">
+    <meta name="author" content="พลอย">
+    <title>DS & ทีวีออนไลน์</title>
     <style>
+        /* CSS Animation สำหรับพื้นหลัง */
+        @keyframes backgroundAnimation {
+            0% {
+                background-size: 100%;
+                background-position: center;
+            }
+            50% {
+                background-size: 120%;
+                background-position: center;
+            }
+            100% {
+                background-size: 100%;
+                background-position: center;
+            }
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%; /* ใช้ min-height เพื่อให้เนื้อหายืด */
+            overflow-x: hidden;
+            background-image: url('https://img2.pic.in.th/pic/1000019765.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: yellow;
+            font-family: 'Arial', sans-serif;
+            animation: backgroundAnimation 10s infinite alternate;
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* เปลี่ยนจาก center เป็น flex-start เพื่อให้เลื่อนหน้าได้ */
+            padding: 0 10px;
+        }
+
+        /* โลโก้ */
+        .logo-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 15vw;
+            padding: 10px;
+        }
+
+        .logo {
+            width: 100%;
+            height: auto;
+        }
+
+        header {
+            background-color: rgba(0, 0, 255, 0.3); /* สีฟ้าโปร่งใส */
+            color: yellow;
+            font-size: 5vw;
+            font-weight: bold;
+            padding: 2vw 4vw;
+            border-radius: 8px;
+            margin: 5vh 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 3s ease-out;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 500px;
+            margin: 2vh 0;
+        }
+
+        .button {
+            background-color: rgba(255, 255, 0, 0.1); /* สีพื้นหลังโปร่งใสมาก */
+            color: yellow;
+            font-size: 4vw;
+            font-weight: bold;
+            padding: 2vh 3vw;
+            border: 2px solid yellow;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 2vh 0;
+            width: 100%;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        .button:hover {
+            background-color: rgba(255, 255, 0, 0.3); /* เปลี่ยนสีเมื่อ hover */
+            transform: translateY(-5px);
+        }
+
+        .youtube-button {
+            margin-top: 3vh;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            color: yellow;
+            background: rgba(0, 0, 0, 0.5); /* โปร่งใสเพื่อให้ยังเห็นพื้นหลัง */
+            width: 100%;
+            text-align: center;
+        }
+
+        /* อนิเมชั่นสำหรับ header (Fade in) */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        
+    </div>
+<style>
         body {
             background-color: #000;
             color: #fff;
@@ -14,58 +141,311 @@
             font-family: Arial, sans-serif;
         }
         img {
-            border-radius: 20px;
+            border-radius: 5px;
             border: 1px solid #87CEFA;
             padding: 2px;
             margin: 3px;
-            height: 80px;
-            width: 80px;
-        }
-        .popup, .overlay, [style*="position: fixed"], [style*="position: absolute"] {
-            display: none !important;
+            height: 50px;
+            width: 50px;
         }
     </style>
-    <script>
-        window.onload = function () {
-            // ซ่อนอิลิเมนต์ที่มีการใช้ ID หรือ Class ที่เกี่ยวข้องกับโฆษณา
-            var adElements = document.querySelectorAll('[id*="ad"], [class*="ad"], [src*="ads"]');
-            adElements.forEach(function(element) {
-                element.style.display = 'none';
-            });
+    <header>
+        <h1 style="color: #FFFFFF; text-align: center; font-size: 20px; margin-top: 1px;">หนังผู้ใหญ่</h1>
+    </header>
+    <main>
+
+<a href="intent://dookeela.live/live-tv/alure-channel#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://dookeela.live/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.ytimg.com/vi/qdrk7ih1k6A/hqdefault.jpg"/></a> 
+  
+<a href="intent://www.dropbox.com/scl/fi/e1rosf9wr8d76nco3hnof/ALBA-XXX1-TuktukPlaylist.m3u8?rlkey=9409mxzd9x1q2a3quwfjrauek&st=rkdjoepo&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/ALBA-XXX01.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/w50b9z9vs12a6fazzymuh/ALBA-XXX2-TuktukPlaylist.m3u8?rlkey=erf6fu9a7we1da3kgjobwfs36&st=7lt9uodp&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/ALBA-XXX02.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/j8m6xoa6caehej5knd131/ALBA-XXX3-TuktukPlaylist.m3u8?rlkey=2gph6zrqwb7ip8auhzjirfnmf&st=z1a5v8sp&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/ALBA-XXX03.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/s7tmet5b7avo1s0ywpl8j/ALBA-XXX4-TuktukPlaylist.m3u8?rlkey=9n8cm9ltr0dqofhza3pp0wtop&st=xhe5rrgw&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/ALBA-XXX04.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/ukvtrc7c9zpptfue0wiai/ALBA-XXX5-TuktukPlaylist.m3u8?rlkey=hggzwmu4ffxajnzp304itxlbo&st=7j2s1p65&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/ALBA-XXX05.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/ukvtrc7c9zpptfue0wiai/ALBA-XXX5-TuktukPlaylist.m3u8?rlkey=hggzwmu4ffxajnzp304itxlbo&st=7j2s1p65&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/ALBA-XXX06.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/7v5y2294rxgh0193lrwb9/PinkErotic1-TuktukPlaylist.m3u8?rlkey=hiyfotj3487v3yocyxf0xrzum&st=3tr94uj7&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Pink-Erotic-TV-01.jpg" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/yjjirlvzpkiaum1s3634m/PinkErotic2-TuktukPlaylist.m3u8?rlkey=m6hd5w2tj29xeb955eigsi3x9&st=9ita9gfq&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Pink-Erotic-TV-023e4535fd18d8af26.jpg" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/y4jy8bct1rq4z070dmodd/PinkErotic3-TuktukPlaylist.m3u8?rlkey=s1ur9zpghnn0x3rj80hpxhcxu&st=t6fw8bd8&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Pink-Erotic-TV-03.jpg" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/0ofeeu7q64yg95uql8c6a/PinkErotic4-TuktukPlaylist.m3u8?rlkey=xt6vrle556sexyb958sji9k8b&st=uagtmrul&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Pink-Erotic-TV-045de17c49e4ef705e.jpg" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/71u87q91tfq555rhd3kqc/PinkErotic5-TuktukPlaylist.m3u8?rlkey=l1haj668wrrrpr0fxol60ywjr&st=g9pu56be&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Pink-Erotic-TV-05308f0496aa129b0f.jpg" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/ic7n0y5vs7d99o1z6mfo1/PinkErotic6-TuktukPlaylist.m3u8?rlkey=gt1qt9d2tyek5i3mthiifpeum&st=10ngwtk4&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Pink-Erotic-TV-06b2a714798b0481be.jpg" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/s8diwuknwvcwo6zml50jc/HotClub1-TuktukPlaylist.m3u8?rlkey=ondyfwq3ihidiq5nnsoapskxz&st=3r20tx67&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/HotClub01.png" /></a>
+  
+<a href="intent://www.dropbox.com/scl/fi/lpx86sad1uwxpe9py1yju/HotClub2-TuktukPlaylist.m3u8?rlkey=ra9vrspyrwbko9aeawp6v0yr5&st=jnsbgijj&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/HotClub02b3c8bdc9683cf0c2.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/ci20fvovjuejm5yq28il7/HotClub3-TuktukPlaylist.m3u8?rlkey=nv8mfd8rxfyq7m1em8fyxn1eu&st=lb34jsuq&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/HotClub03321fb357a31e3fb1.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/rcuvaj7p32qs2r5z9cdqp/HotClub4-TuktukPlaylist.m3u8?rlkey=ifs74ej4loknobbg5ayw68mff&st=1if28qw7&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/HotClub04c8bb7a88def665e8.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/o33hcpha2gjqh3p6t1oc1/HotClub5-TuktukPlaylist.m3u8?rlkey=8p08hwrjaquhhrdtxaigwzfav&st=kubk8unq&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/HotClub057d651851600ef0d4.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/1nx1jxd4loy3ami8hqrvz/HotClub6-TuktukPlaylist.m3u8?rlkey=t64dpxk2873r5b0yf44ibyily&st=7qi0noh4&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/HotClub06298fc20c32f3529e.png" /></a>  
+  
+<a href="intent://www.dropbox.com/scl/fi/04y0bjxdxne7bynwsabin/BizarreTV-TuktukPlaylist.m3u8?rlkey=1j0rrlwci82s605ds3zc6j68o&st=wj2vtj7l&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Brazzers.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/74gsbjqoprw67nfwngzqm/BabesTV-TuktukPlaylist.m3u8?rlkey=j9rlxai71w2whkeu639rqum22&st=3cxxqe9x&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/BabesTV.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/h4ywxl2d0k30zfhobkewl/BarelyLegal-TuktukPlaylist.m3u8?rlkey=ynn01ndsdhzo2kvh8bmuepu50&st=nj5hwbfn&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/BarelyLegal.jpg" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/rxe1s0lrxz26rx8ij95ww/Blue-Hustler-TuktukPlaylist.m3u8?rlkey=059f6gsp1obhvc6hzxfq8ubkh&st=eucki64k&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Blue-Hustler.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/8pfdx81loj197fs0jx169/CentoXCento-TuktukPlaylist.m3u8?rlkey=s4x7gaj1hz1pt8uf06xy4lkz9&st=rjfevmp9&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/CentoXCento.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/ckm05xnlgxrnew3imid5o/DorcelTV-TuktukPlaylist.m3u8?rlkey=di39z1cymbfu498aniq0qyac3&st=arxozfje&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/DorcelTV.jpg" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/8f2w0uhhnpyjrmfjxrqh2/Dusk-TuktukPlaylist.m3u8?rlkey=ngsp6exycdihzgj99qwql46th&st=1crypvfi&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Dusk.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/9cguypowzzatjgbu3gnou/EroxTV-TuktukPlaylist.m3u8?rlkey=0mrt8ymmtwbj1p1jp6vrk0g9u&st=2z4vchks&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/EroxTV.jpeg" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/42986zpc2ghp6r2utl8l3/EroxxxTV-TuktukPlaylist.m3u8?rlkey=ufyz0l84pdk19uphneeeq5spf&st=qcmps5n0&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/EroxxxTV.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/dq7vm4krrxrnow1nhw4cz/EvilAngel-TuktukPlaylist.m3u8?rlkey=amqyc6n8m2dosv0tmge9l09n5&st=ohos0ytw&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/EvilAngel.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/u5yc8r1p3uwuvineh9jh3/FapTV-Teens-TuktukPlaylist.m3u8?rlkey=ju9b1anmc9xts9elpcjgunqti&st=1wnyvrym&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/FapTV-Teens.jpeg" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/rgtocupcskp6u2ev8hodd/HOT-Teens-TuktukPlaylist.m3u8?rlkey=1lelw2td23oj6y82ayrf2w3xp&st=r3npegv3&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/HOT-Teens.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/o06uy59u4bwtskeqdjtq5/HustlerTV-TuktukPlaylist.m3u8?rlkey=forbaxaahiprbswahvzigy560&st=qp95i4hb&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/HustlerTV.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/xga3mow3crstrk70gxcsm/Jasmin.tv-TuktukPlaylist.m3u8?rlkey=v8j2mk8311ewnfayixg68uzad&st=cf577caq&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Jasmin.tv.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/nrotcv7ncjv6amrgtxz57/MeidenVanHolland-Hard-TuktukPlaylist.m3u8?rlkey=4o73kbxbsh9kkxahh5cquef0x&st=bwvd7c5i&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/MeidenVanHolland-Hard.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/7hcnezh9fi4hytrgvxg1a/MOFOS-TuktukPlaylist.m3u8?rlkey=fffmn4y1j3ma85vxs6goqa64f&st=1uaksi6e&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/MOFOS.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/2jhe0px850vnotfvn876c/O-LA-LA-TuktukPlaylist.m3u8?rlkey=u8uy0wapkoz0f4zrqs5gr2gud&st=yqlv42zo&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/O-LA-LA.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/cxqfg2j75xffddvvmqq89/PassieXXX-TuktukPlaylist.m3u8?rlkey=g8qau5s27im9xl6vq1tt0v55p&st=fh7g0790&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/PassieXXX.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/vo9fdjm1oai5l63wdheol/Penthouse1-TuktukPlaylist.m3u8?rlkey=7fgjtv4pkdap588vcn4xazgma&st=22bvvi8k&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Penthous.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/fuzml6esm1cyl7dasr4nf/Penthouse2-TuktukPlaylist.m3u8?rlkey=86q6imvwpayoddliuu6ptbbms&st=hxh70o0e&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Penthous.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/6o5rgg4iymdimkegxayto/PenthouseBLACK-TuktukPlaylist.m3u8?rlkey=th7bd2gbna2djoxrqsy122sz0&st=pipt7e20&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/PenthouseBLACK.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/kxu29ygbihmcmgodltbp1/PenthouseGold-TuktukPlaylist.m3u8?rlkey=zsfeii13xm1l28zithbjmwx1z&st=kcn8ytf5&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/PenthouseGold.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/feonqhcq7dzikhsrv01jk/PenthouseReality-TuktukPlaylist.m3u8?rlkey=mhs7un8eqss5kc3xrl3ue0oi2&st=3b5u2zmf&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/PenthouseReality.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/848rnh961o139sj2pwr7a/PinkoTV-TuktukPlaylist.m3u8?rlkey=8dhg43buq1eix2qtcp23lygjp&st=6g2gawdf&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/PinkoTV.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/5l0agvqcshzvda3porosv/PlayBoyTV-TuktukPlaylist.m3u8?rlkey=lgmxa4vgtuwfml662ry2ub6k9&st=djc4lc62&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/PlayBoyTV.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/ockfjcvxcdpa3rmnp2mkj/Private-TuktukPlaylist.m3u8?rlkey=0oxwwl92cdshmjrnmc4qb8vwz&st=iyc01a4l&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Private.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/8psnke8zsyq3itzbuqyza/RealityKingsTV-TuktukPlaylist.m3u8?rlkey=jvtvvd33d5j6ra5j5qj328dqz&st=zm5abt86&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/RealityKingsTV.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/qkvmkuqefsnijny0mvhnk/Redlight-TuktukPlaylist.m3u8?rlkey=dzdq5y0xbbh4991pjcf985wm4&st=pdumxy0r&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/Redlight.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/nmiwi0r5z3os7fenulg7i/SEXTREME-TuktukPlaylist.m3u8?rlkey=82qqd2q0w22qm4nrt0kbe4xw9&st=7jw93mrc&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/SEXTREME.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/rt8p4k8x71jgxdwvtupzo/SuperOne-TuktukPlaylist.m3u8?rlkey=k1vi2pz4jjm5193imkxwz6mmk&st=haj8ts1h&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/SuperOne.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/sc6lns3jixga8isqfvaiw/VenusTV-TuktukPlaylist.m3u8?rlkey=nwxmbe1vg9z1elw2u3rl33aif&st=amyx5w5q&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/VenusTV.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/sk7h4qd9jo8p6ya7zfa3l/VividRed-TuktukPlaylist.m3u8?rlkey=49q2llzb8ajykgqqtxqrrxiyv&st=hb4ry3gl&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/VividRed.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/o6er7z5knb1jhdxg2za0a/VividTV-TuktukPlaylist.m3u8?rlkey=tz1p82xpl9cn0oldoksf27mi9&st=ir9w96db&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/VividTV.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/rljuml66o6x11hl4grzue/XXL-TV-TuktukPlaylist.m3u8?rlkey=sr69rrx6tn762z9i31ilz02tp&st=xrhoc2ws&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/XXL-TV.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/cce6vvok2oo5o3fasyfxt/XY-Max-TuktukPlaylist.m3u8?rlkey=y71imzfo3tlprdwm60kk9skwq&st=7bqtmc5g&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/XY-Max.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/qwb0kvw25a3io6l8barkm/XY-Mix-TuktukPlaylist.m3u8?rlkey=cx1pshl32ktp4qn6rgznd5i7w&st=a98urbmc&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/XY-Mix.png" /></a>
+
+<a href="intent://www.dropbox.com/scl/fi/kg9d0p3e4w52qs7morbhm/XYPlus-TuktukPlaylist.m3u8?rlkey=byghkup84kmbhca0is3tpgbit&st=sm0zwanf&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/XYPlus.png" /></a>
+  
+<a href="intent://www.dropbox.com/scl/fi/1pjxkh3zuk1lg3dziso88/GAY-TV-TuktukPlaylist.m3u8?rlkey=r305lysalnbn8h6vo9lfmejra&st=meqr4mtj&dl=1#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
+   <img border="4px" src="https://img2.pic.in.th/pic/GAY-TV.png" /></a>
+
+<a href="intent://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexico/playlist.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://59ec5453559f0.streamlock.net/mexicotv/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/7gbi5Gf.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/anal.m3u8
+#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=http://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/ROrlQEk.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/asian.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=http://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/uBxciph.jpeg"/></a> 
 
 
-    </script>
-</head>
-<body>
+<a href="intent://cdn.adultiptv.net/bigass.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=http://cdn.adultiptv.ne/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/ktpG7PE.jpeg"/></a> 
 
-</head>
-<body>
-    
-   <p>ช่องการ์ตูน</p>
-    <hr>
 
-<a href="intent://dookeela.live/live-tv/dreamworks#Intent;package=com.wiseplay;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=Live Program;scheme=https;type=video/mp4;end">
-							<img border="4px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpjJpnBBN6kkt6MRwyX7UU8xzG-uuLB-owe45XxWaE91Mn6JSjxQ2N1LBL8bfay4MKA28mFT5kLeaPYYiw8uEDR_66kFj0dN3rEqSBPZwlHimEH_281TLiGjtstZWVNQFypzgJbj0Dy54JmDf56su5j-mE9kXrIGkoCZzLVQ20wOCNIoj7VKUrJNpy8Sc/s320/Dream%20works.jpg" /></a>
-  
-<a href="intent://dookeela.live/live-tv/cartoonclub#Intent;package=com.wiseplay;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=Live Program;scheme=https;type=video/mp4;end"><img border="4px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPWYwrs7GwhpXhd8tbmtVa8hFKYs-tS-M6CTanlYVxT51VIZNpMuyb-2CNWJX9gDqqB5tjFiqWMsYtcD7GUShnhDDIef2aRcPkDQo-9LDlnRaUa1Y-fTD8PR1kEcsv1oE-6sJeNsyPvY0ExF1vUH8FlreQEeP-IswJpwqbqqIGcyasFXErwnipztOC3Ls/s1600/0100.jpg" /></a>
-  
-  <a href="intent://dookeela.live/live-tv/boomerang#Intent;package=com.wiseplay;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=Live Program;scheme=https;type=video/mp4;end"><img border="4px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaD53JponWs27Lgi7sqeHd4884pp0QwnAQmX2RF1drI41HlqA27sY6oupKbqtS5VPLJtker4451_EDHf_WDmHw4p9I7R6QtYEO-EOaiOGMkwYZWh7m8oK_OPEHDFJv0X9EKLz8dvMWPEx5zRXTJrf4w6sc7vCZpzFku-8Ucbp4kop5g3hzvKnRXcnu2R4/s320/1280px-Boomerang-Logo.jpg" /></a>
-  
-<a href="intent://dookeela.live/live-tv/boomerang#Intent;package=com.wiseplay;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=Live Program;scheme=https;type=video/mp4;end"><img border="4px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj89fzI8ZMY2LAq_ot1hNjUYK6Ry7zRG7JCWiDfeTFPyu-gKDNcjSICoR9xyH393fN90ZrUGeKd7loBO9PLsJzuavYfd01ToJvpqLaBzW2fLfBmBkVMbb_3zbwoOtnViQR12G-HMAxk5WYZ5IdGrGP2J1IOpr-SjIbFckeLXK-BVxKxWSHWlETDnWgwANM/s320/0171.jpg" /></a>
-  
-<a href="intent://dookeela.live/live-tv/truesparkplay#Intent;package=com.wiseplay;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=Live Program;scheme=https;type=video/mp4;end"><img border="4px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqQJogOKct2QNdU0ExjI743kbzKdQyLSJjxNn9VvOmHxOhRNfNm4Gpq6_Bbtlhnj5E_LrEKPLD9pz3zWjtNeVnL0AAYVDad6l-bR-KNXFAytREMy20w2VwIU04eC9Xd-iO52lVN5mhMWPEKFzPIyGZ_acfyK_EIdJGGxQ_kvLO_70H8LebKBpE6J3orLU/s1600/truespakplay.png" /></a>
-  
-<a href="intent://dookeela.live/live-tv/nickjr#Intent;package=com.wiseplay;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=Live Program;scheme=https;type=video/mp4;end">
-							<img border="4px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoaIf5_Pog4sSXN3YjjShvAb1HgnYamO20s50e3tDH1xbRmDb4ILQaJeMTO_iIVkzbgGUeFeLzSNV6Jrb3sEBdFINoe8Rridt8I5Yd4vo6n3K-3hsoI72BfDZfoUd501diQFdlpefllIF0sLanFQXwCytLPW3F90fAjOZWAoTzlwNuAP6Ut9a9lOD0co4/s1600/0156.jpg" /></a> 
-  
-<a href="intent://dookeela.live/live-tv/nickelodeon#Intent;package=com.wiseplay;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=Live Program;scheme=https;type=video/mp4;end"><img border="4px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjduMoCp2Cq22p1NqOgP-xRA7MIsVakAUyGbmTQ1ItuRioOg9nN3PufsbNgxGII81nD2mGv1R8x8WO3e3BJ-ld5JpdJwE7izySKV8WAEJZTPps-6LeXdQlGSd26cZXco0bnh1xx3td8WYDbvzYWbkVgEKNLYjI24pBUwnNaHChAnQLtihlClbofR2_opXw/s320/Nickelodeon_2023_logo_(outline).jpg" /></a>
-  
-<a href="intent://www.inwiptv.com/player_demo.php?channel=92941#Intent;package=com.wiseplay;S.referer=https://dookeela.live/&userAgent=exo_player;S.title=Live Program;scheme=https;type=video/mp4;end"><img border="4px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA-OvjaXcOAOOe6SN0jGUlX6pHHeR2infu5N21OzLn7EGWSlaxeqC6xy0MqsQdx6AKwr7YVwIC4CKiwCQgcYXn9nlcW5ASv4vD0VCsYvUjkHegixqg-SOpF6sBQq8UC9NuuJ4x8tGHaOQUjtw7_y6aUy4fkiL2LVwp-9y6jzwiTjJcvvzfKuCn_ytMQgE/s1600/fwtoon.jpg" /></a>
-  
-<a href="intent://edge2a.v2h-cdn.com/boom_anime/boom_anime.stream/playlist.m3u8#Intent;package=com.wiseplay;S.userAgent=exo_player;S.title=Live Program;S.referer=;scheme=https;type=video/mp4;end">
-<img border="4px" src="https://i.postimg.cc/Fs9YjqRS/BoomAnime.jpg" /></a>  
-  
-<a href="intent://dookeela.live/live-tv/cartoonito#Intent;package=com.wiseplay;S.referer=&userAgent=exo_player;S.title=Live Program;scheme=https;type=video/mp4;end"><img border="4px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBb3Arn74qDlwjBl6xQUs1UEq4ApjVRXb8UibBY5vow0ZC4isCxprBU05TBVD5hidoqshvR7mgfzwrC4wDB2tUCb7c2AVvLbbtldx4bT_NgUveKnZf7s-lUn3fTm08Yld0IERidkcJFxXrEt4Gv0c8ZF_MFeMayj_qlAGIk1f8Hq4zP9QZl9kVKtnFgnA/s320/new_cartoonito_logo_by_abfan21_dftmwp8-fullview.jpg" /></a>
-   
-<section> 
-  
+<a href="intent://cdn.adultiptv.net/bigdick.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/SE1AYk4.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/bigtits.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net//;scheme=https;type=video/mp4;end"><img border="4px" src="https://i.imgur.com/NuS1sEX.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/blonde.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/Ody7ajf.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/blowjob.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/TNZyxE5.jpeg"/></a> 
+
+
+<a href="intent://cdn.adultiptv.net/brunette.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/meZCAtB.jpeg"/></a>
+
+<a href="intent://cdn.adultiptv.net/compilation.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/4KOqqXk.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/cuckold.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/whg5i7T.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/fetish.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/nmCtUxR.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/gangbang.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/jmVy5zH.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/gay.m3u8
+#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/gjZ8dex.jpeg"/></a> 
+
+
+<a href="intent://cdn.adultiptv.net/hardcore.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/jv5UZQB.jpeg"/></a> 
+
+
+<a href="intent://cdn.adultiptv.net/interracial.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/OUjGKQP.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/latina.m3u8
+#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/h5OuNMP.jpeg "/></a>
+
+
+
+
+
+<a href="intent://cdn.adultiptv.net/lesbian.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/eFnxoOI.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/livecams.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/7A6dOfw.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/milf.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/BpvHP2c.jpeg"/></a> 
+
+
+<a href="intent://cdn.adultiptv.net/pornstar.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/6RoAV00.jpeg "/></a> 
+
+<a href="intent://cdn.adultiptv.net/pov.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=http://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src=" https://i.imgur.com/SJE0WYl.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/rough.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/v8qt3bc.jpeg "/></a> 
+
+
+<a href="intent://cdn.adultiptv.net/russian.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end">
+<img border="4px" src=https://i.imgur.com/6zCGNkE.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/teen.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net//;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/1FRcCj6.jpeg"/></a> 
+
+<a href="intent://cdn.adultiptv.net/threesome.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://cdn.adultiptv.net/;scheme=https;type=video/mp4;end"><img border="4px" src="https://i.imgur.com/2azEorx.jpeg"/></a> 
+
+
+<a href="intent://live.redtraffic.net/woman.m3u8#Intent;package=com.wiseplay;S.userAgent
+=exo_player;S.title=Live Program;S.referer=https://live.redtraffic.net//;scheme=https;type=video/mp4;end">
+<img border="4px" src="https://i.imgur.com/G7paTV7.jpeg"/></a> 
+
+
+
